@@ -63,15 +63,6 @@ Reload all Maven Projects
 
     Run PizassonScreenStage
 
-## Authors
-
-### Members
-- Santiago Caballero Manzaneda
-- Fabian Romero Claros
-- Jefersson Coronel Lavadenz
-- Jhael Arce Chavez
-- Leonardo Herrera Rosales
-
 ## Roadmap
 
 Some things you would like to add in the future are:
