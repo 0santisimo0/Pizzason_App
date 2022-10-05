@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.image.Image?>
+<AnchorPane prefHeight="700.0" prefWidth="1100.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.pizasson.Controller.ComboController">
+    <children>
+        <Pane prefHeight="60.0" prefWidth="1100.0" style="-fx-background-color: #ca352a;">
+            <ImageView fitHeight="50.0" fitWidth="150.0" layoutX="10.0" layoutY="5.0">
+                <image>
+                    <Image url="@../../../../images/pizassonLogoWhite.png" />
+                </image>
+            </ImageView>
+            <children>
+                <Label alignment="CENTER" contentDisplay="CENTER" layoutY="-10.0" prefHeight="80.0" prefWidth="1100.0" style="-fx-font-weight: bold; -fx-font-size: 30;" text="COMBOS MENU" textFill="WHITE" />
+                <Pane layoutX="750.0" prefHeight="60.0" prefWidth="350.0">
+                    <children>
+                        <Label fx:id="combosOrderedLabel" alignment="CENTER" layoutX="2.0" layoutY="-10.0" prefHeight="80.0" prefWidth="347.0" style="-fx-font-weight: bold; -fx-font-size: 16; -fx-text-alignment: center;" textFill="WHITE" />
+                    </children>
+                </Pane>
+            </children></Pane>
+        <Pane layoutY="60.0" prefHeight="580.0" prefWidth="1100.0">
+            <children>
+                <Pane fx:id="combosMenuPane" prefHeight="580.0" prefWidth="1100.0" style="-fx-background-color: #f9f2ed;" />
+            </children></Pane>
+        <Pane layoutY="640.0" prefHeight="60.0" prefWidth="1100.0" style="-fx-background-color: #ca352a;">
+            <children>
+                <Button fx:id="combosContinueButton" layoutX="940.0" layoutY="11.0" mnemonicParsing="false" onAction="#continueWithOrder" style="-fx-background-color: #deb71b; -fx-font-size: 20;" text="Continue" textFill="WHITE" />
+                <Label layoutX="20.0" prefHeight="60.0" prefWidth="600.0" style="-fx-font-weight: bold; -fx-font-size: 15;" text="All pizzas on Combo Menu are Medium Size" textFill="WHITE" />
+            </children></Pane>
+    </children>
+</AnchorPane>

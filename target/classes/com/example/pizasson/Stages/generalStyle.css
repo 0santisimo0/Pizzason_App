@@ -1,0 +1,22 @@
+.root {
+    -fx-background-color: #f9f2ed;
+}
+
+.buttonContinue {
+    -fx-font-size: 20px;
+    -fx-alignment: "CENTER";
+    -fx-background-color: #deb71b;
+}
+
+.headerStyle {
+    -fx-background-color: #ca352a;
+    -fx-pref-width: 1100;
+    -fx-pref-height: 60.0;
+}
+
+.headerTextStyle {
+    -fx-font-weight: bold;
+    -fx-text-fill: #fff;
+    -fx-font-size: 30px;
+}
+

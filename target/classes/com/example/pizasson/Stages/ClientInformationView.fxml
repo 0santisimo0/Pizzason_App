@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.image.Image?>
+<Pane xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.example.pizasson.Controller.ClientController"
+      prefHeight="700.0" prefWidth="1100.0">
+    <children>
+        <Pane styleClass="headerStyle" prefHeight="60.0" prefWidth="1100">
+            <ImageView fitHeight="50.0" fitWidth="150.0" layoutX="10.0" layoutY="5.0">
+                <image>
+                    <Image url="@../../../../images/pizassonLogoWhite.png" />
+                </image>
+            </ImageView>
+            <Label styleClass="headerTextStyle" layoutX="380" layoutY="10" text="INVOICE INFORMATION"/>
+        </Pane>
+        <Pane fx:id="principalPane">
+        </Pane>
+        <Pane styleClass="headerStyle" prefWidth="1100" prefHeight="60.0" layoutY="640">
+            <Button layoutX="40" layoutY="10" onAction="#goBackAction"
+                    styleClass="buttonContinue" text="Go Back">
+            </Button>
+            <Button layoutX="940" layoutY="10" onAction="#continueAction"
+                    styleClass="buttonContinue" text="Continue">
+            </Button>
+        </Pane>
+    </children>
+</Pane>

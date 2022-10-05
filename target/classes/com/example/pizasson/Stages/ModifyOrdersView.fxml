@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.image.Image?>
+<AnchorPane prefHeight="700.0" prefWidth="1100.0" style="-fx-background-color: f9f2ed;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.pizasson.Controller.ModifyOrdersController">
+    <children>
+        <ImageView fitHeight="50.0" fitWidth="150.0" layoutX="10.0" layoutY="5.0">
+            <image>
+                <Image url="@../../../../images/pizassonLogoWhite.png" />
+            </image>
+        </ImageView>
+        <Pane prefHeight="60.0" prefWidth="1100.0" style="-fx-background-color: ca352a;">
+            <Pane prefHeight="60.0" prefWidth="1100.0">
+                <children>
+                    <Label alignment="CENTER" contentDisplay="CENTER" layoutY="-10.0" prefHeight="80.0" prefWidth="1100.0" style="-fx-font-weight: bold; -fx-font-size: 30; -fx-text-alignment: center;" text="MODIFY ORDERS" textFill="#fff" />
+                    <Label fx:id="totalCostLabel" alignment="CENTER_LEFT" layoutX="865.0" layoutY="20.0" prefHeight="16.0" prefWidth="320.0" style="-fx-font-size: 20; -fx-text-alignment: left; -fx-font-weight: bold" textFill="WHITE" text="TOTAL: " />
+                </children>
+            </Pane>
+        </Pane>
+        <Pane layoutY="60.0" prefHeight="580.0" prefWidth="1100.0" style="-fx-background-color: #f9f2ed;">
+            <children>
+                        <Label layoutX="134.0" layoutY="31.0" prefHeight="16.0" prefWidth="70.0" text="TITLE" />
+                        <Label layoutX="380.0" layoutY="31.0" text="DESCRIPTION" />
+                        <Label layoutX="580.0" layoutY="31.0" text="QUANTITY" />
+                        <Label layoutX="690.0" layoutY="31.0" text="UNIT COST" />
+                <Pane fx:id="ordersPane" layoutY="60" layoutX="26.0" prefHeight="580.0" prefWidth="1100.0" style="-fx-background-color: #f9f2ed;"/>
+            </children>
+        </Pane>
+        <Pane layoutY="640.0" prefHeight="60.0" prefWidth="1100.0" style="-fx-background-color: #ca352a;">
+            <children>
+                <Button layoutX="120.0" layoutY="11.0" onAction="#deleteAllOrders" mnemonicParsing="false" style="-fx-font-size: 20; -fx-background-color: #deb71b; -fx-text-fill: #ffffff;" text="Delete all orders" />
+                <Button layoutX="830.0" layoutY="11.0" onAction="#confirmOrderToPay" mnemonicParsing="false" style="-fx-font-size: 20; -fx-background-color: #deb71b; -fx-text-fill: #ffffff;" text="Continue and confirm" />
+            </children></Pane>
+    </children>
+</AnchorPane>

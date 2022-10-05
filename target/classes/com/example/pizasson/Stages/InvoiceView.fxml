@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+
+<AnchorPane prefHeight="700.0" prefWidth="1100.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.pizasson.Controller.InvoiceController">
+    <children>
+        <Pane prefHeight="60.0" prefWidth="1100.0" style="-fx-background-color: ca352a;">
+            <Pane prefHeight="60.0" prefWidth="1100.0">
+                <children>
+                    <ImageView fitHeight="50.0" fitWidth="150.0" layoutX="10.0" layoutY="5.0">
+                        <image>
+                            <Image url="@../../../../images/pizassonLogoWhite.png" />
+                        </image>
+                    </ImageView>
+                    <Label alignment="CENTER" contentDisplay="CENTER" layoutY="-10.0" prefHeight="80.0" prefWidth="1100.0" style="-fx-font-weight: bold; -fx-font-size: 30; -fx-text-alignment: center;" text="INVOICE" textFill="#fff" />
+                </children>
+            </Pane>
+        </Pane>
+        <Pane layoutY="60.0" prefHeight="580.0" prefWidth="1100.0" style="-fx-background-color: f9f2ed;">
+            <Pane layoutX="56.0" layoutY="22.0" prefHeight="142.0" prefWidth="300.0">
+                <children>
+                   <ImageView fitHeight="70.0" fitWidth="70.0" layoutX="24.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true">
+                       <image>
+                           <Image url="@../../../../images/pizzaLogo.png" />
+                       </image>
+                   </ImageView>
+                    <Label alignment="CENTER" contentDisplay="CENTER" layoutX="90.0" layoutY="12.0" prefHeight="60.0" prefWidth="150.0" style="-fx-font-weight: bold; -fx-font-size: 20; -fx-text-alignment: center;" text="PIZZASON" />
+                    <Label alignment="CENTER" layoutX="24.0" layoutY="79.0" prefHeight="16.0" prefWidth="257.0" text="Av. America Nº 105" />
+                    <Label alignment="CENTER" layoutX="24.0" layoutY="96.0" prefHeight="16.0" prefWidth="257.0" text="Phone: 4434561" />
+                    <Label alignment="CENTER" layoutX="24.0" layoutY="111.0" prefHeight="16.0" prefWidth="257.0" text="Cochabamba - Bolivia" />
+                </children>
+            </Pane>
+            <Pane layoutX="650.0" prefHeight="142.0" prefWidth="300.0">
+                <children>
+                    <Label alignment="CENTER" layoutX="24.0" layoutY="79.0" prefHeight="16.0" prefWidth="257.0" style="-fx-font-size: 18; -fx-text-alignment: center;" text="NIT: 1235434252" />
+                    <Label fx:id="invoiceIdLabel" alignment="CENTER" layoutX="24.0" layoutY="105.0" prefHeight="16.0" prefWidth="257.0" style="-fx-font-size: 18; -fx-text-alignment: center;" text="Invoice Nº " />
+                </children>
+            </Pane>
+            <Pane layoutX="34.0" layoutY="100.0" prefHeight="20.0" prefWidth="300.0">
+                <children>
+                    <Label fx:id="locationDateLabel" alignment="CENTER_LEFT" layoutX="24.0" layoutY="79.0" prefHeight="16.0" prefWidth="257.0" style="-fx-font-size: 14; -fx-text-alignment: left;" text="DATE: " />
+                    <Label fx:id="clientNameLabel" alignment="CENTER_LEFT" layoutX="24.0" layoutY="100.0" prefHeight="16.0" prefWidth="257.0" style="-fx-font-size: 14; -fx-text-alignment: left;" text="TO:  " />
+                    <Label fx:id="clientNitLabel" alignment="CENTER_LEFT" layoutX="24.0" layoutY="121.0" prefHeight="16.0" prefWidth="257.0" style="-fx-font-size: 14; -fx-text-alignment: left;" text="NIT: " />
+                </children>
+            </Pane>
+            <TableView fx:id="ordersTable" layoutX="56.0" layoutY="250.0" prefWidth="995.0" style="-fx-max-height: 250; -fx-text-alignment: center">
+                <columns>
+                    <TableColumn fx:id="orderQuantity" prefWidth="248.6" style="-fx-alignment: center" text="Quantity" />
+                    <TableColumn fx:id="orderTitle" prefWidth="248.6" style="-fx-alignment: center" text="Concept" />
+                    <TableColumn fx:id="orderUnitaryCost" prefWidth="248.6" style="-fx-alignment: center" text="Unitary Cost" />
+                    <TableColumn fx:id="orderSubTotal" prefWidth="248.6" style="-fx-alignment: center" text="Subtotal" />
+                </columns>
+            </TableView>
+            <Pane layoutX="865.0" layoutY="520.0" prefHeight="30.0" prefWidth="180.0">
+                <children>
+                    <Label fx:id="totalCostLabel" alignment="CENTER_LEFT" layoutX="8.0" layoutY="0.0" prefHeight="16.0" prefWidth="320.0" style="-fx-font-size: 16; -fx-text-alignment: left; -fx-font-weight: bold" text="TOTAL: " />
+                </children>
+            </Pane>
+            <Pane layoutX="56.0" layoutY="520.0" prefHeight="30.0" prefWidth="300.0">
+                <children>
+                    <Label fx:id="waitOrderTimeLabel" alignment="CENTER_LEFT" layoutX="24.0" layoutY="0.0" prefHeight="16.0" prefWidth="320.0" style="-fx-font-size: 16; -fx-text-alignment: left;" text="Wait time: " />
+                </children>
+            </Pane>
+        </Pane>
+        <Pane layoutY="640.0" prefHeight="60.0" prefWidth="1100.0" style="-fx-background-color: #ca352a;">
+            <children>
+                <Button layoutX="70.0" layoutY="11.0" mnemonicParsing="false" onAction="#goBackAction" style="-fx-font-size: 20; -fx-background-color: #deb71b; -fx-text-fill: #ffffff;" text="Go Back" />
+                <Button layoutX="910.0" layoutY="11.0" mnemonicParsing="false" onAction="#finishInvoice" style="-fx-font-size: 20; -fx-background-color: #deb71b; -fx-text-fill: #ffffff;" text="Finish Order" />
+            </children></Pane>
+    </children>
+</AnchorPane>

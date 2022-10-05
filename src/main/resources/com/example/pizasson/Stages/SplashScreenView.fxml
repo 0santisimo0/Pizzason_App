@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.*?>
+
+<VBox styleClass="startBox" alignment="CENTER" fx:id="startBox" xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.example.pizasson.Controller.SplashScreenController"
+            prefHeight="500.0" prefWidth="800.0">
+
+</VBox>

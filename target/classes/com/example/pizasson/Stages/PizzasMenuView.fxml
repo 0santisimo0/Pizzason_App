@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.image.Image?>
+<AnchorPane prefHeight="700.0" prefWidth="1100.0" style="-fx-background-color: f9f2ed;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.pizasson.Controller.PizzasMenuController">
+   <children>
+      <Pane prefHeight="60.0" prefWidth="1100.0" style="-fx-background-color: ca352a;">
+         <Pane prefHeight="60.0" prefWidth="1100.0">
+            <children>
+               <ImageView fitHeight="50.0" fitWidth="150.0" layoutX="10.0" layoutY="5.0">
+                  <image>
+                     <Image url="@../../../../images/pizassonLogoWhite.png" />
+                  </image>
+               </ImageView>
+               <Label alignment="CENTER" contentDisplay="CENTER" layoutY="-10.0" prefHeight="80.0" prefWidth="1100.0" style="-fx-font-weight: bold; -fx-font-size: 30; -fx-text-alignment: center;" text="PIZZAS MENU" textFill="#fff" />
+            </children>
+         </Pane>
+      </Pane>
+      <Pane layoutY="60.0" prefHeight="580.0" prefWidth="1100.0">
+         <children>
+            <Pane fx:id="menuPane" prefHeight="580.0" prefWidth="1100.0" style="-fx-background-color: #f9f2ed;" />
+         </children>
+      </Pane>
+      <Pane layoutY="640.0" prefHeight="60.0" prefWidth="1100.0" style="-fx-background-color: #ca352a;">
+         <children>
+            <Button layoutX="940.0" layoutY="11.0" mnemonicParsing="false" onAction="#continueWithOrderOutOfMenu" style="-fx-font-size: 20; -fx-background-color: #deb71b; -fx-text-fill: #ffffff;" text="Continue" />
+         </children></Pane>
+   </children>
+</AnchorPane>

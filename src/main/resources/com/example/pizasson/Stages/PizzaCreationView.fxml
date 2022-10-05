@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.image.Image?>
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0"
+      prefWidth="1100.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="com.example.pizasson.Controller.PizzaCreationController">
+
+    <Pane styleClass="headerStyle" prefHeight="60.0" prefWidth="1100">
+        <ImageView fitHeight="50.0" fitWidth="150.0" layoutX="10.0" layoutY="5.0">
+            <image>
+                <Image url="@../../../../images/pizassonLogoWhite.png" />
+            </image>
+        </ImageView>
+        <Label styleClass="headerTextStyle" layoutX="400" layoutY="10" text="PIZZA CREATION"/>
+        <Label fx:id="counterLabel" layoutX="780" layoutY="15">
+        </Label>
+    </Pane>
+    <HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="580.0" prefWidth="1100.0">
+       <children>
+           <VBox alignment="CENTER" prefHeight="700.0" prefWidth="500.0">
+            <SplitPane dividerPositions="0.5" orientation="VERTICAL" prefHeight="700.0" prefWidth="500.0">
+              <items>
+                <VBox styleClass="boxStyle" fx:id="leftBox" alignment="TOP_CENTER" minHeight="0.0" minWidth="0.0" prefHeight="300.0" prefWidth="500.0">
+                     <children>
+                        <Label id="titleLeft" text="Choose the ingredients" />
+                        <Label id="descrpitionLeft" styleClass="textStyle" text="Choose 3 or more ingredients please" />
+                        <ComboBox fx:id="ingredientsBox" styleClass="comboBox" onAction="#showConfirmationBox" prefWidth="150.0">
+                        </ComboBox>
+                     </children>
+                  </VBox>
+                 <VBox styleClass="boxStyle" alignment="CENTER" minHeight="0.0" minWidth="0.0" prefHeight="300.0" prefWidth="500.0">
+                    <children>
+                       <Label id="titleLeft" text="Choose the Size" />
+                       <Label id="descrpitionLeft" styleClass="textStyle" text="The prize will change depending of the size" />
+                       <ComboBox fx:id="sizesBox" styleClass="comboBox" prefWidth="150.0">
+                       </ComboBox>
+                    </children>
+                 </VBox>
+              </items>
+            </SplitPane>
+         </VBox>
+         <VBox alignment="TOP_CENTER" prefHeight="700.0" prefWidth="600.0">
+            <SplitPane dividerPositions="0.5" orientation="VERTICAL" prefHeight="700.0" prefWidth="500.0">
+                <items/>
+                <HBox prefWidth="550" prefHeight="350">
+                    <children>
+                        <VBox styleClass="boxStyle" prefWidth="350" fx:id="rightBox1">
+
+                        </VBox>
+                        <VBox  prefWidth="200" alignment="CENTER_RIGHT" fx:id="rightBox2">
+
+                        </VBox>
+                    </children>
+                </HBox>
+                <VBox styleClass="boxStyle" alignment="CENTER" fx:id="downRightBox">
+                </VBox>
+            </SplitPane>
+         </VBox>
+       </children>
+    </HBox>
+    <VBox alignment="CENTER" styleClass="headerStyle" prefHeight="60.0" prefWidth="1100">
+        <children>
+            <Pane prefWidth="1100" prefHeight="60.0">
+                <Button layoutX="40" layoutY="10" onAction="#goBackAction"
+                        styleClass="buttonContinue" text="Go Back">
+                </Button>
+                <Button layoutX="940" layoutY="10" fx:id="continueButton" onAction="#orderPizzaAction" disable="true"
+                        styleClass="buttonContinue" text="Continue">
+                </Button>
+            </Pane>
+        </children>
+    </VBox>
+</VBox>

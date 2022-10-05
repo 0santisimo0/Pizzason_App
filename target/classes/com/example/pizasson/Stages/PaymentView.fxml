@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="480.0" maxWidth="-Infinity" minHeight="470.0" minWidth="-Infinity" prefHeight="470.0" prefWidth="689.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.pizasson.Controller.Payments.PaymentController">
+    <children>
+        <Pane layoutX="-1.0" prefHeight="64.0" prefWidth="1100.0" style="-fx-background-color: #ca352a;">
+            <children>
+                <ImageView fitHeight="50.0" fitWidth="150.0" layoutX="10.0" layoutY="5.0">
+                    <image>
+                        <Image url="@../../../../images/pizassonLogoWhite.png" />
+                    </image>
+                </ImageView>
+                <Label alignment="CENTER" contentDisplay="CENTER" layoutX="74.0" layoutY="-1.0" prefHeight="71.0" prefWidth="560.0" style="-fx-font-weight: bold; -fx-font-size: 30; -fx-text-alignment: center;" text="PAYMENT METHODS" textFill="#fff" />
+                <Label alignment="CENTER" contentDisplay="CENTER" layoutX="312.0" prefHeight="71.0" prefWidth="560.0" style="-fx-font-weight: bold; -fx-font-size: 30; -fx-text-alignment: center;" text="PAYMENT METHODS" textFill="#fff" />
+            </children>
+        </Pane>
+        <Separator layoutX="531.0" layoutY="67.0" orientation="VERTICAL" prefHeight="382.0" prefWidth="1.0" />
+        <Label layoutX="14.0" layoutY="83.0" text="Please select your payment method, if you do not wish to ">
+            <font>
+                <Font name="System Bold" size="14.0" />
+            </font>
+        </Label>
+        <RadioButton fx:id="payCreditCard" layoutX="67.0" layoutY="136.0" mnemonicParsing="false" onAction="#getCreditCard" prefHeight="20.0" prefWidth="314.0">
+            <font>
+                <Font name="System Bold" size="15.0" />
+            </font>
+            <toggleGroup>
+                <ToggleGroup fx:id="payment" />
+            </toggleGroup>
+        </RadioButton>
+        <RadioButton fx:id="payPayPal" layoutX="67.0" layoutY="196.0" mnemonicParsing="false" onAction="#getPayPal" prefHeight="20.0" prefWidth="192.0" toggleGroup="$payment">
+            <font>
+                <Font name="System Bold" size="15.0" />
+            </font>
+        </RadioButton>
+        <RadioButton fx:id="payTigoMoney" layoutX="64.0" layoutY="247.0" mnemonicParsing="false" onAction="#getTigoMoney" prefHeight="20.0" prefWidth="192.0" toggleGroup="$payment">
+            <font>
+                <Font name="System Bold" size="15.0" />
+            </font>
+        </RadioButton>
+        <Pane layoutX="-4.0" layoutY="430.0" prefHeight="52.0" prefWidth="1104.0" style="-fx-background-color: #ca352a;">
+            <children>
+                <Button layoutX="991.0" layoutY="14.0" mnemonicParsing="false" text="Contiunue" />
+            </children>
+        </Pane>
+        <Label layoutX="163.0" layoutY="361.0" text="The chosen payment method is:" textFill="RED">
+            <font>
+                <Font size="11.0" />
+            </font>
+        </Label>
+        <Label layoutX="91.0" layoutY="164.0" text="Card bin, pay  date, y CCV" textFill="#545353" />
+        <Label layoutX="89.0" layoutY="224.0" text="Email" textFill="#545353" />
+        <Label layoutX="89.0" layoutY="274.0" text="Phone number, email, CI" textFill="#545353" />
+        <RadioButton fx:id="payQr" layoutX="65.0" layoutY="304.0" mnemonicParsing="false" onAction="#getQr" prefHeight="20.0" prefWidth="192.0" toggleGroup="$payment">
+            <font>
+                <Font name="System Bold" size="15.0" />
+            </font>
+        </RadioButton>
+        <Button fx:id="creditCardButton" layoutX="414.0" layoutY="135.0" mnemonicParsing="false" onAction="#clickedOnCreditCard" prefHeight="24.0" prefWidth="67.0" text="select" />
+        <Button fx:id="qrButton" layoutX="414.0" layoutY="303.0" mnemonicParsing="false" onAction="#clickedQR" prefHeight="22.0" prefWidth="67.0" text="select" />
+        <Button fx:id="tigoMoneyButton" layoutX="414.0" layoutY="246.0" mnemonicParsing="false" onAction="#clickedOnTigoMoney" prefHeight="14.0" prefWidth="67.0" text="select" />
+        <Button fx:id="payPalButton" layoutX="414.0" layoutY="195.0" mnemonicParsing="false" onAction="#clickedOnPayPal" prefHeight="22.0" prefWidth="67.0" text="select" />
+        <Label layoutX="83.0" layoutY="330.0" text="Take picture" textFill="#545353" />
+        <TextField fx:id="methodSelected" alignment="CENTER" layoutX="166.0" layoutY="384.0" prefHeight="33.0" prefWidth="171.0">
+            <font>
+                <Font name="System Bold" size="14.0" />
+            </font>
+        </TextField>
+        <ImageView fitHeight="520.0" fitWidth="537.0" layoutX="549.0" layoutY="71.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../../../../images/Payment/Selección_172.png" />
+            </image>
+        </ImageView>
+        <Label layoutX="14.0" layoutY="101.0" text="press continue and it will be paid with cash.">
+            <font>
+                <Font name="System Bold" size="14.0" />
+            </font>
+        </Label>
+    </children>
+</AnchorPane>

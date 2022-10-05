@@ -1,0 +1,49 @@
+.root {
+    -fx-background-color: #f9f2ed;
+}
+
+.label {
+    -fx-text-fill: #ca352a;
+}
+
+.buttonCancel {
+    -fx-font-size: 20px;
+    -fx-background-color: #ca352a;
+    -fx-alignment: "CENTER";
+}
+
+.buttonAdd {
+    -fx-font-size: 20px;
+    -fx-background-color: #C0EDA6;
+    -fx-alignment: "CENTER";
+}
+
+.ImgPizza {
+    -fx-alignment: "CENTER";
+}
+
+#titleLeft {
+    -fx-alignment: center;
+    -fx-font-weight: bold;
+    -fx-font-size: 30.0;
+    -fx-padding: 25px;
+}
+
+.boxStyle {
+    -fx-padding: 10;
+    -fx-background-color: #f9f2ed;
+}
+
+.confirmationIngredientBox {
+    -fx-background-color: #FFE5B4;
+    -fx-pref-height: 140;
+    -fx-alignment: "CENTER";
+    -fx-font-size: 20;
+    -fx-font-weight: bolder;
+}
+
+.comboBox {
+    -fx-padding: 10;
+    -fx-pref-width: 200;
+    -fx-background-color: #C4DFAA;
+}

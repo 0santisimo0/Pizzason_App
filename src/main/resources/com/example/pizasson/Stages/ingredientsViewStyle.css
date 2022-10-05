@@ -1,0 +1,11 @@
+.ingredientTitle {
+    -fx-font-size: 20;
+    -fx-font-weight: bolder;
+    -fx-alignment: "CENTER";
+}
+
+.IngredientInformationVbox {
+    -fx-border-color: #000;
+    -fx-background-color: #FFE5B4;
+    -fx-alignment: "CENTER";
+}

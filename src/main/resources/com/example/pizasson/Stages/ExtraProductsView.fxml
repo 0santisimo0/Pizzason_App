@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<ScrollPane fx:id="scrollpane1" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1434.0" prefWidth="1100.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.pizasson.Controller.ExtraProductsController">
+    <content>
+        <AnchorPane fx:id="anchorpane1" minHeight="0.0" minWidth="0.0" prefHeight="1370.0" prefWidth="1100.0" style="-fx-background-color: f9f2ed;">
+            <children>
+            <Label layoutX="35.0" layoutY="77.0" prefHeight="25.0" prefWidth="270.0" style="-fx-font-weight: bold; -fx-font-size: 20;" text="Amount Extra Desserts:" />
+            <Label layoutX="36.0" layoutY="533.0" prefHeight="25.0" prefWidth="247.0" style="-fx-font-weight: bold; -fx-font-size: 20" text="Amount Extra Drinks:" />
+                <FlowPane layoutX="-1.0" prefHeight="14.0" prefWidth="1100.0">
+                    <children>
+                        <Pane fx:id="paneup" prefHeight="60.0" prefWidth="1100.0" style="-fx-background-color: #ca352a;">
+                            <ImageView fitHeight="50.0" fitWidth="150.0" layoutX="10.0" layoutY="5.0">
+                                <image>
+                                    <Image url="@../../../../images/pizassonLogoWhite.png" />
+                                </image>
+                            </ImageView>
+                            <Label fx:id="titleextrasmenu" alignment="CENTER" layoutX="35.0" prefHeight="57.0" prefWidth="1012.0" style="-fx-font-weight: bold; -fx-font-size: 30; -fx-text-alignment: center;" text="EXTRAS MENU" textFill="WHITE" />
+                        </Pane>
+                    </children></FlowPane>
+                <GridPane fx:id="colum23456" layoutX="8.0" layoutY="135.0" prefHeight="131.0" prefWidth="1086.0">
+                    <columnConstraints>
+                        <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+               <children>
+                  <ImageView fitHeight="134.0" fitWidth="186.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../images/imagesExtras/lemonPieDessert.jpg" />
+                     </image></ImageView>
+                  <ImageView fitHeight="132.0" fitWidth="176.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1">
+                     <image>
+                        <Image url="@../../../../images/imagesExtras/genoeseCake.jpg" />
+                     </image></ImageView>
+                  <ImageView fx:id="imageExtra1" fitHeight="179.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="3">
+                     <image>
+                        <Image url="@../../../../images/imagesExtras/biscuitDessert.jpeg" />
+                     </image></ImageView>
+                  <ImageView fitHeight="136.0" fitWidth="189.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2">
+                     <image>
+                        <Image url="@../../../../images/imagesExtras/babaDessert.png" />
+                     </image></ImageView>
+               </children>
+                </GridPane>
+                <GridPane fx:id="colum3456" layoutX="7.0" layoutY="343.0" prefHeight="125.0" prefWidth="1086.0">
+                    <columnConstraints>
+                        <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+               <children>
+                  <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1">
+                     <image>
+                        <Image url="@../../../../images/imagesExtras/PuddingDessert.jpeg" />
+                     </image></ImageView>
+                  <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2">
+                     <image>
+                        <Image url="@../../../../images/imagesExtras/puddingPumpkDessert.png" />
+                     </image></ImageView>
+               </children>
+                </GridPane>
+            <Label fx:id="amountLabelCounterDrinks" layoutX="283.0" layoutY="533.0" style="-fx-font-weight: bold; -fx-font-size: 20;" />
+            <Label fx:id="amountLabelCounterMeals" layoutX="313.0" layoutY="77.0" style="-fx-font-weight: bold; -fx-font-size: 20;" />
+            <GridPane fx:id="colum34561" layoutX="-1.0" layoutY="604.0" prefHeight="125.0" prefWidth="1086.0">
+               <columnConstraints>
+                  <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+               <children>
+                  <ImageView fitHeight="126.0" fitWidth="133.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../images/imagesExtras/cocacolaDrink.jpg" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="138.0" fitWidth="144.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2">
+                     <image>
+                        <Image url="@../../../../images/imagesExtras/cocacolaCeroDrink.jpg" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="126.0" fitWidth="128.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="3">
+                     <image>
+                        <Image url="@../../../../images/imagesExtras/fantaDrink.jpg" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="128.0" fitWidth="125.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="4">
+                     <image>
+                        <Image url="@../../../../images/imagesExtras/sodaWaterDrink.jpeg" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="135.0" fitWidth="137.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1">
+                     <image>
+                        <Image url="@../../../../images/imagesExtras/spriteDrink.jpg" />
+                     </image>
+                  </ImageView>
+               </children>
+            </GridPane>
+            <GridPane fx:id="colum345611" layoutX="262.0" layoutY="799.0" prefHeight="125.0" prefWidth="561.0">
+               <columnConstraints>
+                  <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+               <children>
+                  <ImageView fitHeight="118.0" fitWidth="285.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../images/imagesExtras/tostadaDrink.jpg" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="119.0" fitWidth="238.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1">
+                     <image>
+                        <Image url="@../../../../images/imagesExtras/lemonDrink.jpeg" />
+                     </image>
+                  </ImageView>
+               </children>
+            </GridPane>
+            <ComboBox fx:id="comboboxDrinks1" layoutX="26.0" layoutY="738.0" onAction="#comboBoxDrinksEvents" prefHeight="24.0" prefWidth="159.0" promptText="Quantity To Buy" />
+            <ComboBox fx:id="comboboxDrinks5" layoutX="899.0" layoutY="738.0" onAction="#comboBoxDrinksEvents" prefHeight="24.0" prefWidth="159.0" promptText="Quantity To Buy" />
+            <ComboBox fx:id="comboboxDrinks4" layoutX="685.0" layoutY="738.0" onAction="#comboBoxDrinksEvents" prefHeight="24.0" prefWidth="159.0" promptText="Quantity To Buy" />
+            <ComboBox fx:id="comboboxDrinks3" layoutX="463.0" layoutY="738.0" onAction="#comboBoxDrinksEvents" prefHeight="24.0" prefWidth="159.0" promptText="Quantity To Buy" />
+            <ComboBox fx:id="comboboxDrinks2" layoutX="247.0" layoutY="738.0" onAction="#comboBoxDrinksEvents" prefHeight="24.0" prefWidth="159.0" promptText="Quantity To Buy" />
+            <ComboBox fx:id="comboboxDrinks6" layoutX="327.0" layoutY="930.0" onAction="#comboBoxDrinksEvents" prefHeight="24.0" prefWidth="159.0" promptText="Quantity To Buy" />
+            <ComboBox fx:id="comboboxDrinks7" layoutX="606.0" layoutY="930.0" onAction="#comboBoxDrinksEvents" prefHeight="24.0" prefWidth="159.0" promptText="Quantity To Buy" />
+            <Label layoutX="26.0" layoutY="993.0" prefHeight="25.0" prefWidth="242.0" style="-fx-font-weight: bold; -fx-font-size: 20" text="Amount Extra Meals:" />
+            <Label fx:id="amountLabelCounterDesserts" layoutX="268.0" layoutY="993.0" style="-fx-font-weight: bold;-fx-font-size: 20;" />
+            <GridPane fx:id="colum345612" layoutX="-1.0" layoutY="1072.0" prefHeight="125.0" prefWidth="1086.0">
+               <columnConstraints>
+                  <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+               <children>
+                  <ImageView fitHeight="123.0" fitWidth="172.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../images/imagesExtras/CheeseSticksMeal.jpeg" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="165.0" fitWidth="207.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="3">
+                     <image>
+                        <Image url="@../../../../images/imagesExtras/potatochipsMeal.jpeg" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="139.0" fitWidth="192.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2">
+                     <image>
+                        <Image url="@../../../../images/imagesExtras/chickenwingsMeal.jpg" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="125.0" fitWidth="199.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1">
+                     <image>
+                        <Image url="@../../../../images/imagesExtras/saladMeal.jpg" />
+                     </image>
+                  </ImageView>
+               </children>
+            </GridPane>
+            <ComboBox fx:id="comboboxMeal1" layoutX="46.0" layoutY="1206.0" onAction="#comboBoxMealsEvents" prefHeight="24.0" prefWidth="173.0" promptText="Portion Size To Buy" />
+            <ComboBox fx:id="comboboxMeal4" layoutX="863.0" layoutY="1206.0" onAction="#comboBoxMealsEvents" prefHeight="24.0" prefWidth="177.0" promptText="Portion Size To Buy" />
+            <ComboBox fx:id="comboboxMeal2" layoutX="327.0" layoutY="1206.0" onAction="#comboBoxMealsEvents" prefHeight="24.0" prefWidth="169.0" promptText="Portion Size To Buy" />
+            <ComboBox fx:id="comboboxMeal3" layoutX="591.0" layoutY="1206.0" onAction="#comboBoxMealsEvents" prefHeight="24.0" prefWidth="173.0" promptText="Portion Size To Buy" />
+            <Separator layoutX="-1.0" layoutY="508.0" prefHeight="0.0" prefWidth="1089.0" />
+            <Separator layoutX="5.0" layoutY="970.0" prefHeight="0.0" prefWidth="1089.0" />
+            <Pane fx:id="paneUp1" layoutX="-2.0" layoutY="1309.0" prefHeight="60.0" prefWidth="1100.0" style="-fx-background-color: #ca352a;">
+               <children>
+                  <Button fx:id="bottomContinue" layoutX="943.0" layoutY="11.0" mnemonicParsing="false" onAction="#continueWithOrderOutOfMenu" style="-fx-font-size: 20; -fx-background-color: #deb71b; -fx-text-fill: #ffffff;" text="Continue" />
+               </children>
+            </Pane>
+            <ComboBox fx:id="comboBoxDessert1" layoutX="57.0" layoutY="281.0" onAction="#comboBoxDessertsEvents" prefHeight="24.0" prefWidth="175.0" promptText="Portion Size To Buy" />
+            <ComboBox fx:id="comboboxDessert2" layoutX="332.0" layoutY="281.0" onAction="#comboBoxDessertsEvents" prefHeight="24.0" prefWidth="173.0" promptText="Portion Size To Buy" />
+            <ComboBox fx:id="comboboxDessert3" layoutX="611.0" layoutY="281.0" onAction="#comboBoxDessertsEvents" prefHeight="24.0" prefWidth="181.0" promptText="Portion Size To Buy" />
+            <ComboBox fx:id="comboboxDessert4" layoutX="874.0" layoutY="281.0" onAction="#comboBoxDessertsEvents" prefHeight="24.0" prefWidth="178.0" promptText="Portion Size To Buy" />
+            <ComboBox fx:id="comboboxDessert5" layoutX="328.0" layoutY="468.0" onAction="#comboBoxDessertsEvents" prefHeight="24.0" prefWidth="173.0" promptText="Portion Size To Buy" />
+            <ComboBox fx:id="comboboxDessert6" layoutX="596.0" layoutY="468.0" onAction="#comboBoxDessertsEvents" prefHeight="24.0" prefWidth="179.0" promptText="Portion Size To Buy" />
+            </children></AnchorPane>
+    </content>
+</ScrollPane>

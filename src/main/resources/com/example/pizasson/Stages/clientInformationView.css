@@ -1,0 +1,24 @@
+.subtitleLabels {
+    -fx-font-family: "Rasa SemiBold";
+    -fx-font-weight: bolder;
+    -fx-font-size: 30;
+    -fx-text-fill: #852D13;
+}
+
+.textFieldStyle {
+    -fx-background-color: -fx-control-inner-background;
+    -fx-background-insets: 0;
+    -fx-padding: 1 3 1 3;
+    -fx-border-color: #852D13;
+    -fx-border-width: 3;
+    -fx-text-fill: black;
+    -fx-font-weight: bold;
+    -fx-font-size: 18;
+    -fx-background-radius: 30;
+    -fx-border-radius: 30;
+}
+
+.alertLabelStyle {
+    -fx-font-family: "Rasa SemiBold";
+    -fx-font-weight: bolder;
+}

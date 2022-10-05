@@ -1,0 +1,19 @@
+.pizzaInformationBoxStyle {
+    -fx-background-color: #F5F0BB;
+    -fx-alignment: "CENTER";
+    -fx-font-family: "Rasa SemiBold";
+    -fx-pref-height: 280;
+}
+
+.counterLabelStyle {
+    -fx-font-family: Monospaced;
+    -fx-font-weight: bolder;
+    -fx-text-fill: white;
+    -fx-font-size: 20;
+}
+
+.textStyle {
+    -fx-font-family: "Rasa SemiBold";
+    -fx-font-size: 20;
+    -fx-text-fill: #852D13;
+}
