@@ -27,7 +27,7 @@
 
 ## Introduction
 
-The following project was developed by the "Equison" team, with the aim of achieving a "virtual waiter" for a Pizza
+The developed project is the aim of achieving a "virtual waiter" for a Pizza
 restaurant. It should be noted that the project was carried out following the steps of the Scrum Methodology.
 
 ## Description
@@ -35,16 +35,13 @@ restaurant. It should be noted that the project was carried out following the st
 The project consists in the realization of a "Virtual Waiter" for a pizza restaurant, for which the following main 
 objectives are had: to have a Splash Screen with the name of the restaurant when starting the program, to have the menu 
 of pizzas, to have discounts for combos, to be able to buy extra products only after having bought a pizza before, to be 
-able to modify the order after completing the order. The project was built on Java 17 along with tools like IntelliJ and 
-GitLab using the Branching model for the workflow.
+able to modify the order after completing the order. The project was built on Java 17 along with tools like IntelliJ, 
+GitLab and GitHub using the Branching model for the workflow.
 
 ## Process
 
 The designated project in the matter of Software Development was started on Wednesday, June 22 with the "Sprint Planning" 
-from which the Product Backlog comes out with the tasks to be carried out during the only "Sprint" that will be held. The 
-respective roles are distributed: Victor Chavez Cartagena (Product Owner), Fabian Romero (Scrum Master) Jefersson Coronel, 
-Jhael Arce, Santiago Caballero and Leonardo Herrera (Development Team). On Saturday, June 25, the development of the 
-project begins taking the first user stories as tasks to be done. Each day the respective daily meetings were held 
+from which the Product Backlog comes out with the tasks to be carried out during the only "Sprint" that will be held. On Saturday, June 25, the development of the project begins taking the first user stories as tasks to be done. Each day the respective daily meetings were held 
 reviewing the progress of each developer. On Monday, July 4, the last merge is made to the main branch to end the project.
 
 ## Usage
